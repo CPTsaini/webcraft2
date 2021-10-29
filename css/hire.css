@@ -1,0 +1,221 @@
+/* ===============================before banner============================================== */
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    top: 3rem;
+}
+
+.banner {
+    display: flex;
+    background: url("../images/backgrounds/hire.jpg") no-repeat center;
+    height: 50vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+.banner .inner-banner h1 {
+    font-size: 50px;
+    margin-top: 2rem;
+}
+
+.banner .inner-banner a {
+    color: white;
+    text-decoration: none;
+}
+
+.banner .inner-banner span {
+    font-weight: 50;
+}
+
+
+/* ===============================before banner end============================================== */
+
+
+/* ===============================form start=================================================== */
+
+.pform {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: url(../images/backgrounds/bg9.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.container {
+    width: 920px;
+    background: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 62px 55px 90px 55px;
+}
+
+.main-form {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: transparent
+}
+
+.wrap-input {
+    width: 100%;
+    position: relative;
+    border: 2px solid rgb(21 137 221);
+    border-radius: 13px;
+    padding: 10px 30px 9px 22px;
+    margin-bottom: 20px;
+}
+
+.lable {
+    font-family: Montserrat-SemiBold;
+    font-size: 15px;
+    color: rgb(21 137 221);
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    background: transparent;
+    font-family: Montserrat-SemiBold;
+    font-size: 18px;
+    color: black;
+    line-height: 1.2;
+    padding-right: 15px;
+    border: none;
+    outline: none;
+}
+
+input.input {
+    height: 40px;
+}
+
+textarea.input {
+    min-height: 120px;
+    padding-top: 9px;
+    padding-bottom: 13px;
+}
+
+.budget-div {
+    display: none;
+}
+
+
+/* [ Button]  */
+
+.form-btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(21 137 221);
+    border-radius: 10px;
+    font-family: Montserrat-Medium;
+    border: none;
+    font-size: 25px;
+    color: black;
+    line-height: 1.2;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.btn i {
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.btn:hover {
+    background-color: transparent;
+    border: 3px solid rgb(21 137 221);
+    color: rgb(21 137 221);
+}
+
+.btn:hover i {
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
+    transform: translateX(10px);
+}
+
+.custom-select {
+    position: relative;
+    font-family: Arial;
+}
+
+.custom-select select {
+    font-size: 15px;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.custom-select option {
+    font-size: 17px;
+    width: 100%;
+    background: transparent;
+}
+
+.select-selected {
+    background-color: DodgerBlue;
+}
+
+
+/* ===============================form end=================================================== */
+
+
+/* ==============================media queries============================================ */
+
+@media (max-width: 991px) {}
+
+@media (max-width: 690px) {
+    .banner .inner-banner h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .banner .inner-banner h1 {
+        font-size: 35px;
+    }
+}
