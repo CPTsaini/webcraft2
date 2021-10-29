@@ -872,6 +872,8 @@ h2 {
     .home .home-content .text-3 {
         font-size: 32px;
     }
+    .home .home-content .text-3 span{
+    font-size: 28px;}
     .home .home-content a {
         font-size: 20px;
     }
