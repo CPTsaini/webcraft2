@@ -25,7 +25,7 @@
                 <li><a href="index.html" class="menu-btn">Home</a></li>
                 <li><a href="about.html" class="menu-btn">About</a></li>
                 <li><a href="index.html#services" class="menu-btn">Services</a></li>
-                <li><a href="index.html#skills" class="menu-btn">Skills</a></li>
+                <li><a href="index.html#skills" class="menu-btn">Technologies</a></li>
                 <li><a href="index.html#teams" class="menu-btn">Teams</a></li>
                 <li><a href="index.html#contact" class="menu-btn">Contact</a></li>
 
@@ -51,7 +51,128 @@
     </section>
 
     <!-- =============================before banner end=========================== -->
-  <h1>work in under constructio</h1>
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">Kickstart your project</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="images/pictures/about.jpg" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text" style="color: steelblue;">Let us understand your business objectives, set up initial milestones, and plan your software project.</div>
+                    <p>
+                        <ul>
+                            <li>Validation of your project idea/scope of your project</li>
+                            <li>Industry specific best practices that can be applied to your project</li>
+                            <li>Actionable insights on which technology would suit your requirements</li>
+                            <li>Implementation and engagement plan of action</li>
+                            <li>Ballpark estimate and timeframe of development</li>
+
+
+                        </ul>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="pform">
+        <div class="container">
+            <form class="main-form" action="">
+                <div class="wrap-input">
+                    <span class="lable">Company's/Your Name</span>
+                    <input type="text" class="input" required placeholder="Name">
+                </div>
+
+                <div class="wrap-input">
+                    <span class="lable">Email Address</span>
+                    <input type="email" class="input" required placeholder="Email address">
+                </div>
+
+                <div class="wrap-input">
+                    <span class="lable">Contact Number</span>
+                    <input type="text" class="input" required placeholder="mobile no">
+                </div>
+
+                <div class="wrap-input">
+                    <span class="lable">Service Type</span>
+                    <div class="custom-select">
+                        <select onclick="service_show()" name="service" required>
+                        <option>Please chooses</option>
+                        <option>Web development</option>
+                        <option>Graphic design</option>
+                        <option>SEO/SMO</option>
+                        <option>Digital marketing</option>
+                        <option>Content writing</option>
+                        <option>others</option>
+                        </select>
+
+                    </div>
+                </div>
+
+                <div id="show-service" class="budget-div">
+
+                    <div class="wrap-input">
+                        <span class="lable ">Your Budget From (INR) *</span>
+                        <input class="input" type="text " name="low-budget" onKeyUp="numericFilter(this);" placeholder="Your Budget From (INR) ">
+                    </div>
+                    <div class="wrap-input">
+                        <span class="lable ">Your Budget To (INR) *</span>
+                        <input class="input" type="text " name="high-budget" onKeyUp="numericFilter(this);" placeholder="Your Budget To (INR) ">
+                    </div>
+
+                </div>
+
+                <div class="wrap-input">
+                    <span class="lable">Description</span>
+                    <textarea class="input " name="description" placeholder="Your project Description here... "></textarea>
+                </div>
+
+                <div class="form-btn ">
+                    <button type="submit" class="btn ">
+                    <span>
+                        Submit
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                    </span>
+                </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <section class="hcard">
+        <h1 id="h1">Meaningful Difference, Real Value</h1>
+        <div class="block">
+            <div class="cards">
+                <h1>Talented Professionals</h1>
+                <p>Team of cross-functional professionals to consult you around every aspect of software engineering</p>
+            </div>
+
+            <div class="cards">
+                <h1>Passion-led Engineering</h1>
+                <p>Driven by a passion to push the boundaries of technology to solve complex business challenges</p>
+            </div>
+
+            <div class="cards">
+                <h1>Mature Processes</h1>
+                <p>Time-proven agile development methodology to reduce risk and cater to changes efficiently at any stage of SDLC</p>
+            </div>
+
+            <div class="cards">
+                <h1>Transparency & Collaboration</h1>
+                <p>Clear and transparent view of your project’s progress through our proprietary project management tool</p>
+            </div>
+            <div class="cards">
+                <h1>Dedicated Staff</h1>
+                <p>Quickly and smoothly evolve to newer, disruptive technologies and stay ahead of the curve in your markets</p>
+            </div>
+            <div class="cards">
+                <h1>Innovation Focused
+                </h1>
+                <p>Explore new opportunities to drive growth, new insights to spark innovation, and new ways to connect with customers</p>
+            </div>
+        </div>
+
+    </section>
 
     <!--================================== footer strat ===============================-->
     <footer class="footer">
