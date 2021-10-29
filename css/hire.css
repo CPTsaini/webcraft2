@@ -38,6 +38,10 @@
 
 /* ===============================form start=================================================== */
 
+.about {
+    background-color: rgb(230, 224, 230);
+}
+
 .pform {
     width: 100%;
     min-height: 100vh;
@@ -50,7 +54,7 @@
     justify-content: center;
     align-items: center;
     padding: 15px;
-    background: url(../images/backgrounds/bg9.jpg) no-repeat center;
+    background: url(../images/backgrounds/form.jpg) no-repeat center;
     background-size: cover;
 }
 
@@ -77,10 +81,10 @@
 .wrap-input {
     width: 100%;
     position: relative;
-    border: 2px solid rgb(21 137 221);
     border-radius: 13px;
     padding: 10px 30px 9px 22px;
     margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.459);
 }
 
 .lable {
@@ -89,6 +93,7 @@
     color: rgb(21 137 221);
     line-height: 1.5;
     text-transform: uppercase;
+    color: #000;
 }
 
 .input {
@@ -97,7 +102,7 @@
     background: transparent;
     font-family: Montserrat-SemiBold;
     font-size: 18px;
-    color: black;
+    color: white;
     line-height: 1.2;
     padding-right: 15px;
     border: none;
@@ -116,6 +121,13 @@ textarea.input {
 
 .budget-div {
     display: none;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: whitesmoke;
+    opacity: 1;
+    /* Firefox */
 }
 
 
@@ -166,8 +178,8 @@ textarea.input {
 
 .btn:hover {
     background-color: transparent;
-    border: 3px solid rgb(21 137 221);
-    color: rgb(21 137 221);
+    border: 3px solid black;
+    color: black;
 }
 
 .btn:hover i {
@@ -201,21 +213,116 @@ textarea.input {
 }
 
 
+/* =============================bottom section================================== */
+
+.hcard {
+    width: 100%;
+    padding: 3rem 5rem;
+}
+
+.hcard #h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: normal;
+}
+
+.hcard .block {
+    display: flex;
+    flex-flow: wrap;
+    padding: 4rem;
+}
+
+.hcard .block .cards {
+    width: calc(33% - 20px);
+    height: 250px;
+    background-color: rgb(250, 240, 250);
+    box-shadow: 2px 2px 7px rgb(100, 96, 96);
+    text-align: center;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    margin: 10px;
+    border-left: 3px solid steelblue;
+    border-bottom: 3px solid steelblue;
+    border-bottom-left-radius: 20px;
+}
+
+.hcard .block .cards:hover {
+    box-shadow: 5px 5px 10px rgb(100, 96, 96);
+}
+
+.hcard .block .cards h1 {
+    color: steelblue;
+    padding: 1rem 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.hcard .block .cards p {
+    text-align: center;
+    padding-top: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(71, 70, 69);
+}
+
+
+/* =============================bottom section end================================== */
+
+
 /* ===============================form end=================================================== */
 
 
 /* ==============================media queries============================================ */
 
-@media (max-width: 991px) {}
+@media (max-width: 991px) {
+    .container {
+        padding: 50px 50px;
+    }
+    .hcard .block {
+        padding: 2rem;
+    }
+    .hcard .block .cards {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
 
 @media (max-width: 690px) {
     .banner .inner-banner h1 {
         font-size: 40px;
+    }
+    .container {
+        padding: 50px 5px;
+    }
+    .hcard {
+        padding: 3rem 1rem;
+    }
+    .hcard .block {
+        padding: 2rem;
+    }
+    .hcard .block .cards {
+        width: 100%;
+        padding: 1rem;
     }
 }
 
 @media (max-width: 500px) {
     .banner .inner-banner h1 {
         font-size: 35px;
+    }
+    .container {
+        padding: 50px 5px;
+    }
+    .hcard {
+        padding: 3rem 10px;
+    }
+    .hcard .block {
+        padding: 2rem 0;
+    }
+    .hcard .block .cards {
+        width: 100%;
+        padding: 0;
+    }
+    .hcard .block .cards p {
+        padding: 1rem;
     }
 }
