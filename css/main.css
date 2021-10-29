@@ -288,7 +288,7 @@ section .title::after {
 /* about section styling */
 
 .about .title::after {
-    content: "who we are";
+    content: "";
 }
 
 .about .about-content .left {
