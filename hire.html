@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,7 +45,7 @@
     <section class="banner">
         <div class="max-width">
             <div class="inner-banner">
-                <h1><a href="index.html"> WEBCRAFT </a><i class="fas fa-chevron-circle-right"></i>
+                <h1 data-aos="slide-right"><a href="index.html"> WEBCRAFT </a><i class="fas fa-chevron-circle-right"></i>
                     <span>Hire</span>
                 </h1>
             </div>
@@ -55,18 +57,18 @@
         <div class="max-width">
             <h2 class="title">Kickstart your project</h2>
             <div class="about-content">
-                <div class="column left">
+                <div class="column left" data-aos="zoom-out">
                     <img src="images/pictures/about.jpg" alt="">
                 </div>
                 <div class="column right">
                     <div class="text" style="color: steelblue;">Let us understand your business objectives, set up initial milestones, and plan your software project.</div>
                     <p>
                         <ul>
-                            <li>Validation of your project idea/scope of your project</li>
-                            <li>Industry specific best practices that can be applied to your project</li>
-                            <li>Actionable insights on which technology would suit your requirements</li>
-                            <li>Implementation and engagement plan of action</li>
-                            <li>Ballpark estimate and timeframe of development</li>
+                            <li data-aos="slide-up">Validation of your project idea/scope of your project</li>
+                            <li data-aos="slide-upt">Industry specific best practices that can be applied to your project</li>
+                            <li data-aos="slide-up">Actionable insights on which technology would suit your requirements</li>
+                            <li data-aos="slide-up">Implementation and engagement plan of action</li>
+                            <li data-aos="slide-up">Ballpark estimate and timeframe of development</li>
 
 
                         </ul>
@@ -77,24 +79,26 @@
         </div>
     </section>
     <div class="pform">
+
         <div class="container">
+            <h1>Lets talk</h1>
             <form class="main-form" action="">
-                <div class="wrap-input">
+                <div class="wrap-input" data-aos="fade-right">
                     <span class="lable">Company's/Your Name</span>
                     <input type="text" class="input" required placeholder="Name">
                 </div>
 
-                <div class="wrap-input">
+                <div class="wrap-input" data-aos="fade-right">
                     <span class="lable">Email Address</span>
                     <input type="email" class="input" required placeholder="Email address">
                 </div>
 
-                <div class="wrap-input">
+                <div class="wrap-input" data-aos="fade-right">
                     <span class="lable">Contact Number</span>
                     <input type="text" class="input" required placeholder="mobile no">
                 </div>
 
-                <div class="wrap-input">
+                <div class="wrap-input" data-aos="fade-right">
                     <span class="lable">Service Type</span>
                     <div class="custom-select">
                         <select onclick="service_show()" name="service" required>
@@ -123,7 +127,7 @@
 
                 </div>
 
-                <div class="wrap-input">
+                <div class="wrap-input" data-aos="fade-right">
                     <span class="lable">Description</span>
                     <textarea class="input " name="description" placeholder="Your project Description here... "></textarea>
                 </div>
@@ -142,30 +146,30 @@
     <section class="hcard">
         <h1 id="h1">Meaningful Difference, Real Value</h1>
         <div class="block">
-            <div class="cards">
+            <div class="cards" data-aos="flip-left">
                 <h1>Talented Professionals</h1>
                 <p>Team of cross-functional professionals to consult you around every aspect of software engineering</p>
             </div>
 
-            <div class="cards">
+            <div class="cards" data-aos="flip-left">
                 <h1>Passion-led Engineering</h1>
                 <p>Driven by a passion to push the boundaries of technology to solve complex business challenges</p>
             </div>
 
-            <div class="cards">
+            <div class="cards" data-aos="flip-left">
                 <h1>Mature Processes</h1>
                 <p>Time-proven agile development methodology to reduce risk and cater to changes efficiently at any stage of SDLC</p>
             </div>
 
-            <div class="cards">
+            <div class="cards" data-aos="flip-left">
                 <h1>Transparency & Collaboration</h1>
                 <p>Clear and transparent view of your project’s progress through our proprietary project management tool</p>
             </div>
-            <div class="cards">
+            <div class="cards" data-aos="flip-left">
                 <h1>Dedicated Staff</h1>
                 <p>Quickly and smoothly evolve to newer, disruptive technologies and stay ahead of the curve in your markets</p>
             </div>
-            <div class="cards">
+            <div class="cards" data-aos="flip-left">
                 <h1>Innovation Focused
                 </h1>
                 <p>Explore new opportunities to drive growth, new insights to spark innovation, and new ways to connect with customers</p>
@@ -229,6 +233,10 @@
                 x.style.display = "none";
             }
         }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 
 </body>
